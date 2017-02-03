@@ -28,12 +28,12 @@ Is a very simple and easy to understand lightweight MVC *(Model-View-Controller)
 
 2. Checkout a copy of the source files and head over to your app's config in /config/config.php and update the MySQL database credentials (created in previous step). 
 
-```php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'db_name');
-define('DB_USER', 'db_user');
-define('DB_PASSWORD', 'db_password');
-```
+  ```php
+  define('DB_HOST', 'localhost');
+  define('DB_NAME', 'db_name');
+  define('DB_USER', 'db_user');
+  define('DB_PASSWORD', 'db_password');
+  ```
 
 3. Run the `_install/install.php` script or execute the .sql statements in the _install/-folder (with PHPMyAdmin for example).
 
@@ -158,14 +158,6 @@ function top5($order="rating", $search = "")
 }
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Others
 
 ### Server config for nginx
@@ -206,7 +198,3 @@ be changed according your installation folder*
 ## Authors
 
 * [**Walter Gammarota**](https://github.com/WalterGammarota)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
