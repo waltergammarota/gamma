@@ -11,7 +11,17 @@ define ('DEVELOPMENT_ENVIRONMENT', false);
 define ('DEFAULT_CONTROLLER', "movies");
 
 // MySQL Database Details
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'mvc_framework');
-define('DB_USER', 'mvc_framework');
-define('DB_PASSWORD', 'Argentina');
+if(!getenv("DB_HOST"))
+{
+	define('DB_HOST', 'localhost');
+	define('DB_NAME', 'mvc_framework');
+	define('DB_USER', 'mvc_framework');
+	define('DB_PASSWORD', 'Argentina');
+}
+else
+{
+	define('DB_HOST', getenv("DB_HOST"));
+	define('DB_NAME', getenv("DB_NAME"));
+	define('DB_USER', getenv("DB_USER"));
+	define('DB_PASSWORD', getenv("DB_PASSWORD"));
+}
